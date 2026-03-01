@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoilPh™ - Product</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            line-height: 1.6;
+            text-align: center;
+            overflow-x: hidden;
+            background: #f4f4f4;
+        }
+
+        /* Navbar */
+        header {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://www.proterrafoundation.org/wp-content/uploads/2022/10/soil-degradation-and-salinization.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Product Section */
+        .product-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+            margin-top: 80px;
+            background: linear-gradient(135deg, #1f1f1f, #2c3e50);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        /* Product Image */
+        .product-image {
+            width: 45%;
+            margin-right: 30px;
+            text-align: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* initial shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect on image */
+        .product-image img:hover {
+            transform: translateY(-10px) scale(1.03); /* lifts and zooms */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); /* stronger shadow */
+        }
+
+        /* Product Description */
+        .product-description {
+            width: 45%;
+            text-align: left;
+            line-height: 1.6;
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #2c2c2c, #3a4a5a);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            color: #fff;
+        }
+
+        .product-description h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .product-description p, .product-description ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Explanation Section */
+        .explanation-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 50px;
+            margin-top: 50px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+            background: linear-gradient(135deg, #1f1f1f, #2c3e50);
+            color: #fff;
+        }
+
+        .explanation-section .process,
+        .explanation-section .how-it-works {
+            width: 45%;
+            padding: 30px;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #2c2c2c, #3a4a5a);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        .explanation-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .explanation-section ul,
+        .explanation-section ol {
+            font-size: 1.1rem;
+        }
+
+        .explanation-section ul li,
+        .explanation-section ol li {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>SoilPh Monitoring™</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="Aboutus.html">About Us</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h2>Welcome to SoilPh Monitoring™</h2>
+            <p>Your trusted partner in soil health and sustainable agriculture. Explore our products and resources to make informed decisions for better soil management.</p>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <!-- Product Image -->
+        <div class="product-image">
+            <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t1.15752-9/639436360_3884125851795029_1089378254090683533_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGP8kQeFHvqFNMuNnHziQrtt0KjYh4lu7a3QqNiHiW7tomtPxikyw4luNV2WUUukCGXTRkaYF48J8xQWHnoJt-H&_nc_ohc=USJsmzF6pVkQ7kNvwFWZ5MV&_nc_oc=Adn8PAVp6QFGkphji5UvRW92Inbju2r4nRzAbW3NSdnY3YojACZVIVkJvlHaQG5Uuhs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl3-1.fna&_nc_ss=8&oh=03_Q7cD4wHsQS84sSAr9tJE8v9olQI9a0wa42e3ZAb6t533glFl7w&oe=69CB00AA" alt="Product Image">
+        </div>
+
+        <!-- Product Description -->
+        <div class="product-description">
+            <h2>SoilPh Monitoring™ Product</h2>
+            <p>Our SoilPh Monitoring™ product helps enhance soil health and supports sustainable agriculture. Designed for farmers, agronomists, and environmental experts, this product ensures healthier, more fertile soil for better crop yields.</p>
+            <p><strong>Key Benefits:</strong></p>
+            <ul>
+                <li>Improves soil structure</li>
+                <li>Enhances nutrient retention</li>
+                <li>Boosts microbial activity</li>
+                <li>Reduces soil erosion</li>
+                <li>Supports sustainable farming practices</li>
+            </ul>
+            <p>Get your hands on SoilPh Monitoring™ today and join us in revolutionizing soil health for a more sustainable future!</p>
+        </div>
+    </section>
+
+    <!-- Explanation Section -->
+    <section class="explanation-section">
+        <!-- Product Process -->
+        <div class="process">
+            <h3>How It Works</h3>
+            <ul>
+                <li><strong>Bamboo:</strong> Extracts soil from below.</li>
+                <li><strong>Charcoal, Sand, Cotton/Coffee Filter:</strong> Filters the soil.</li>
+                <li><strong>pH Indicator:</strong> Detects acidity levels.</li>
+                <li><strong>Nitrogen Indicator:</strong> Detects nitrates to assess soil fertility.</li>
+                <li><strong>Any Wick Material:</strong> Absorbs water upward.</li>
+                <li><strong>Plastic:</strong> Covers and protects the product.</li>
+                <li><strong>Paper:</strong> Indicates results through color change.</li>
+            </ul>
+        </div>
+
+        <!-- Process Steps -->
+        <div class="how-it-works">
+            <h3>Process Steps</h3>
+            <ol>
+                <li>Soil and water enter from the bottom.</li>
+                <li>The soil is filtered, leaving clean water.</li>
+                <li>The clean water triggers the pH and nitrogen indicator papers.</li>
+                <li>The paper changes color, providing the final result.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 SoilPh Monitoring™. All Rights Reserved. | <a href="Privacy.html">Privacy Policy</a> | <a href="Terms.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>

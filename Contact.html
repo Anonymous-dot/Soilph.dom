@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoilPh Monitoring™ - Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body, html {
+    height: 100%;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: #f4f4f4;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+header h1 { color: white; font-size: 2rem; font-weight: 600; }
+nav a { color: white; text-decoration: none; margin: 0 15px; padding: 8px 15px; border-radius: 5px; transition: 0.3s; }
+nav a:hover { background: rgba(255,255,255,0.2); }
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('https://www.proterrafoundation.org/wp-content/uploads/2022/10/soil-degradation-and-salinization.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero h2 { font-size: 2.5rem; margin-bottom: 20px; }
+.hero p { font-size: 1.2rem; }
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.contact-form, .social-box {
+    flex: 1 1 400px;
+    background: linear-gradient(135deg, #1f1f1f, #2c3e50);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-form:hover, .social-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.7);
+}
+
+.contact-form h3, .social-box h3 { margin-bottom: 25px; font-size: 2rem; }
+
+.contact-form label { display: block; margin-bottom: 8px; color: #ddd; text-align: left; }
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    outline: none;
+}
+.contact-form button {
+    background: linear-gradient(135deg, #4CAF50, #2ecc71);
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.social-box p { font-size: 1.1rem; margin-bottom: 15px; text-align: left; }
+
+/* 🔥 Single Clickable PPT Image */
+.ppt-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.ppt-img {
+    width: 250px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ppt-img:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5),
+                0 0 25px #4CAF50,
+                0 0 50px #2ecc71;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>SoilPh Monitoring™</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="Product.html">Product</a>
+<a href="Aboutus.html">About Us</a>
+<a href="Contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2>Get in Touch with SoilPh Monitoring™</h2>
+<p>We'd love to hear from you! Fill out the contact form or reach us via social media.</p>
+</div>
+</section>
+
+<section class="contact-section">
+
+<div class="contact-form">
+<h3>Contact Us</h3>
+<form onsubmit="return showNotification()">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email Address" required>
+<textarea rows="4" placeholder="Address" required></textarea>
+<input type="tel" placeholder="Contact Number" required>
+<button type="submit">Submit</button>
+</form>
+</div>
+
+<div class="social-box">
+<h3>Connect with Us</h3>
+<p><strong>Facebook:</strong> Soil PH Monitoring</p>
+<p><strong>Instagram:</strong> @soilph.monitoring</p>
+<p><strong>TikTok:</strong> @SoilPHMonitoring</p>
+
+<!-- ✅ Single PPT Image -->
+<a href="Soil_Degradation.pptx" target="_blank" class="ppt-link">
+    <img src="data:image/jpeg;base64,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" alt="Click to view PPT" class="ppt-img">
+</a>
+
+</div>
+</section>
+
+<footer>
+<p>&copy; 2026 SoilPh Monitoring™. All Rights Reserved.</p>
+</footer>
+
+<script>
+function showNotification() {
+    alert('Thank you! Your contact details have been submitted.');
+    return false;
+}
+</script>
+
+</body>
+</html>
